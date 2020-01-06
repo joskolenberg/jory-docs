@@ -1,4 +1,4 @@
-# Overview
+# Writing Jory queries
 
 ---
 
@@ -7,4 +7,4 @@
 <a name="section-1"></a>
 ## First Section
 
-Write something cool.. 🦊
+Write something cooldfd.. 🦊

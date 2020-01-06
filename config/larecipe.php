@@ -33,9 +33,9 @@ return [
     */
 
     'versions' => [
-        'default' => '1.0',
+        'default' => '2.0',
         'published' => [
-            '1.0'
+            '2.0'
         ]
     ],
 
@@ -125,8 +125,8 @@ return [
         'fa_v4_shims' => true, // Add FontAwesome v4 shims prevent BC break
         'show_side_bar' => true,
         'colors' => [
-            'primary' => '#787AF6',
-            'secondary' => '#2b9cf2'
+            'primary' => '#ebad3d',
+            'secondary' => '#555555'
         ],
 
         'theme_order' => null // ['LaRecipeDarkTheme', 'customTheme']

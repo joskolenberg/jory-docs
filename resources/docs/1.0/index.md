@@ -1,3 +1,0 @@
-- ## Get Started
-    - [Overview](/{{route}}/{{version}}/overview)
-    - [Overview2](/{{route}}/{{version}}/overview2)
