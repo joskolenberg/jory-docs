@@ -4,13 +4,13 @@
     - [Quickstart](/{{route}}/{{version}}/quickstart)
     
 - ## Creating Jory Resources
+    - [Introduction](/{{route}}/{{version}}/creating_jory_resources)
     - [Generator command](/{{route}}/{{version}}/generator)
     - [Configuring fields](/{{route}}/{{version}}/fields)
-    - [Adding filter options](/{{route}}/{{version}}/configuring_filters)
+    - [Adding filter options](/{{route}}/{{version}}/filters)
     - [Adding sort options](/{{route}}/{{version}}/sorts)
     - [Adding relations](/{{route}}/{{version}}/relations)
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
-    - [Registering](/{{route}}/{{version}}/registering)
     
 - ## Endpoints
     - [Introduction](/{{route}}/{{version}}/endpoints)
