@@ -9,7 +9,7 @@
 
 <a name="registering"></a>
 ## Registering Fields
-Only attributes which are explicitly configured in the Jory Resource can be fetched when using the API. A model's database attribute can be registered using the ```field()``` method.
+Only attributes which are explicitly configured in the Jory Resource can be fetched using the API. A model's database attribute can be registered using the ```field()``` method.
 
 ```php
 protected function configure(): void
@@ -19,10 +19,11 @@ protected function configure(): void
     ...
 }
 ```
+> {info} A request which requests a field which is not configured results in a ```422``` error response.
 
 <a name="custom-attributes"></a>
 ## Custom Attributes
-An Eloquent model's [custom attribute](https://laravel.com/docs/6.x/eloquent-mutators#accessors-and-mutators) can be registered using the same ```field()``` method.
+A model's [custom attribute](https://laravel.com/docs/6.x/eloquent-mutators#accessors-and-mutators) can be registered using the same ```field()``` method.
 
 ```php
 protected function configure(): void
@@ -85,10 +86,10 @@ A callback can be added to set additional options.
 protected function configure(): void
 {
     $this->field('name')->filterable(function (Filter $filter){
-            $filter->scope(new NameFilter);
+            $filter->scope(new CustomNameFilter);
             $filter->operators(['=', 'like']);
         })->sortable(function(Sort $sort){
-            $sort->scope(new NameSort);
+            $sort->scope(new CustomNameSort);
             $sort->default();
         });
 }

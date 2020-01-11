@@ -1,4 +1,4 @@
-# Laravel-Jory: Creating Jory Resources
+# Creating Jory Resources
 
 ---
 

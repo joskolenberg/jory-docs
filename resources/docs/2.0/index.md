@@ -7,7 +7,7 @@
     - [Introduction](/{{route}}/{{version}}/creating_jory_resources)
     - [Generator command](/{{route}}/{{version}}/generator)
     - [Configuring fields](/{{route}}/{{version}}/fields)
-    - [Adding filter options](/{{route}}/{{version}}/filters)
+    - [Configuring filters](/{{route}}/{{version}}/filters)
     - [Adding sort options](/{{route}}/{{version}}/sorts)
     - [Adding relations](/{{route}}/{{version}}/relations)
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
