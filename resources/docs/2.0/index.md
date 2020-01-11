@@ -43,7 +43,7 @@
 
 - ## Various
     - [Metadata](/{{route}}/{{version}}/metadata)
-    - [Controller usage](/{{route}}/{{version}}/queries)
+    - [Controller usage](/{{route}}/{{version}}/controller_usage)
     - [Error messages](/{{route}}/{{version}}/queries)
     - [Base64 support](/{{route}}/{{version}}/queries)
     - [Other frameworks](/{{route}}/{{version}}/queries)

@@ -34,7 +34,7 @@ Jory::register(CustomJoryResource::class);
 <a name="basics"></a>
 ## Setting up the Basics
 ### Related Model
-A Jory Resource must be bound to an Eloquent model using the ```$modelClass``` attribute.
+A Jory Resource must be linked to an Eloquent model using the ```$modelClass``` attribute.
 ```php
 namespace App\Http\JoryResources;
 
