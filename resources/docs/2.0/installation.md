@@ -8,7 +8,7 @@
 
 <a name="install"></a>
 ## Install
-You only need to pull the package in using composer.
+Pull the package in using composer.
 ```shell script
 composer require joskolenberg/laravel-jory
 ```
@@ -16,7 +16,7 @@ composer require joskolenberg/laravel-jory
 
 <a name="config"></a>
 ## Publish Config
-Optionally you can publish the config file if you need to tweak some settings.
+Optionally you can publish the config file to tweak some settings.
 ```shell script
 php artisan vendor:publish --provider="JosKolenberg\LaravelJory\JoryServiceProvider"
 ```
