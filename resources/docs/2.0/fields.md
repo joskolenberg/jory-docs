@@ -95,5 +95,53 @@ protected function configure(): void
 }
 ```
 
+<a name="hiding"></a>
+## Default Fields
+When no fields are explicitly requested by the API consumer the parser will return all configured fields. To prevent a field from being returned by default use the ```hideByDefault``` option. 
+```php
+protected function configure(): void
+{
+    $this->field('id');
+    $this->field('first_name')->hideByDefault();
+    $this->field('last_name');
+}
+```
+In this case first name will be hidden.
+```javascript
+axios.get('jory/musician/1', {
+    params: {
+        jory: {}
+    }
+});
+```
+```json
+{
+    "data": {
+        "id": 1,
+        "last_name": "Jagger"
+    }
+}
+```
+
+But first name is available when requested explicitly.
+```javascript
+axios.get('jory/musician/1', {
+    params: {
+        jory: {
+            fields: ['id', 'first_name', 'last_name']
+        }
+    }
+});
+```
+```json
+{
+    "data": {
+        "id": 1,
+        "first_name": "Mick",
+        "last_name": "Jagger"
+    }
+}
+```
+
 > {info} Jory is totally independent of Eloquent's ```visible``` and ```hidden``` properties, so any ```visible``` or ```hidden``` settings on the model DON'T affect the result using Jory.
 

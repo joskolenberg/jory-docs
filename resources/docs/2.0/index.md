@@ -8,7 +8,7 @@
     - [Generator command](/{{route}}/{{version}}/generator)
     - [Configuring fields](/{{route}}/{{version}}/fields)
     - [Configuring filters](/{{route}}/{{version}}/filters)
-    - [Adding sort options](/{{route}}/{{version}}/sorts)
+    - [Configuring sorts](/{{route}}/{{version}}/sorts)
     - [Adding relations](/{{route}}/{{version}}/relations)
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
     
