@@ -9,19 +9,11 @@
     - [Configuring fields](/{{route}}/{{version}}/fields)
     - [Configuring filters](/{{route}}/{{version}}/filters)
     - [Configuring sorts](/{{route}}/{{version}}/sorts)
-    - [Adding relations](/{{route}}/{{version}}/relations)
+    - [Configuring relations](/{{route}}/{{version}}/relations)
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
-    
-- ## Endpoints
-    - [Introduction](/{{route}}/{{version}}/endpoints)
-    - [Single records](/{{route}}/{{version}}/endpoint_first)
-    - [Byid](/{{route}}/{{version}}/endpoint_find)
-    - [Collections](/{{route}}/{{version}}/endpoint_get)
-    - [Multiple resources](/{{route}}/{{version}}/endpoint_multiple)
-    - [Aggregates](/{{route}}/{{version}}/endpoint_aggregates)
 
-- ## Writing Queries
-    - [Introduction](/{{route}}/{{version}}/query_introduction)
+- ## Fetching Data
+    - [Endpoints](/{{route}}/{{version}}/endpoints)
     - [Selecting fields](/{{route}}/{{version}}/query_fields)
     - [Using filters](/{{route}}/{{version}}/query_filters)
     - [Using sorts](/{{route}}/{{version}}/query_sorts)

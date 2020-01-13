@@ -11,7 +11,7 @@ Laravel Jory creates a dynamic API for your Laravel application to serve the dat
 JoryResources are comparable to Laravel's built-in Resource classes but you only write (or [generate](/{{route}}/{{version}}/generator)) a JoryResource once for each model. Next, your data can be queried in a flexible way by passing a [Jory Query](/{{route}}/{{version}}/query_introduction) to the [Jory Endpoints](/{{route}}/{{version}}/endpoints).
 
 <br>
-Jory is designed to be simple enough to master within minutes but flexible enough to fit 95% of your daily use-cases. It's like some lightweight Graphql around your Eloquent models. <sup>*The Jory syntax has nothing to do with Graphql</sup>
+Jory is designed to be simple enough to master within minutes but flexible enough to fit 95% of your data-fetching use-cases. It makes Eloquent Query Builder's most-used features available directly from your frontend.
 
 > {info} All fetching examples in this documentation assume the use of Axios but you can use whatever tool you like.
 

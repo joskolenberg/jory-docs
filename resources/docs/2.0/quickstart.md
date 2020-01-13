@@ -65,7 +65,7 @@ Result:
             "last_name": "McCartney",
             "date_of_birth": "1942-06-18",
             "band_id": 2
-        }
+        },
         {
             "id": 4,
             "first_name": "Robbert",

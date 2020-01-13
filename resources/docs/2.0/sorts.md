@@ -72,7 +72,7 @@ axios.get('jory/musician', {
 ```
 <a name="field"></a>
 ## Registering on a Field
-If you want to register a field and a sort option on the same column in one go you could use the ```sortable``` helper method when configuring a field.
+If you want to register a field and a sort option on the same column in one go use the ```sortable``` helper method when configuring a field.
 ```php
 protected function configure(): void
 {

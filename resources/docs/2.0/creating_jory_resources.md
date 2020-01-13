@@ -112,6 +112,6 @@ class UserGroupJoryResource extends JoryResource
 
 <a name="relations"></a>
 ## A Note on Relations
-Whenever a relation is fetched the parser will look for a registered Jory Resource for the related model and use this one. This means that:
+Whenever a relation is fetched the parser will look for the registered Jory Resource for the related model and use this one. This means that:
 - You only write a Jory Resource for each model once, and use it everywhere.
 - Models which will only be queried via another model's relation still need their own Jory Resource.
