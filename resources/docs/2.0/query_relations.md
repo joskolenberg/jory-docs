@@ -1,4 +1,4 @@
-# Using Relations
+# Fetching Relations
 
 ---
 
@@ -8,7 +8,7 @@
 
 <a name="fetching"></a>
 ## Fetching Relations
-Use the ```relations``` (```rlt```) parameter to define which relations you want to fetch. This parameter holds an object with key/value pairs, the key being the relation name and the value being another Jory Query. This Jory Query will be applied on the loaded relation.
+Use the ```relations``` (```rlt```) key to define which relations you want to fetch. This parameter holds an object with key/value pairs, the key being the relation name and the value being another Jory Query. This Jory Query will be applied on the loaded relation.
 > {info} The Jory Query on a relation can in turn contain relations, this allows you to fetch unlimited nested relations.
   
 <br>

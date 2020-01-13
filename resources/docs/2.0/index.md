@@ -19,26 +19,12 @@
     - [Selecting fields](/{{route}}/{{version}}/query_fields)
     - [Using filters](/{{route}}/{{version}}/query_filters)
     - [Using sorts](/{{route}}/{{version}}/query_sorts)
-    - [Using relations](/{{route}}/{{version}}/query_relations)
+    - [Fetching relations](/{{route}}/{{version}}/query_relations)
     - [Using offset & limit](/{{route}}/{{version}}/query_offset_and_limit)
-
-- ## Optimization
-    - [Explicit select](/{{route}}/{{version}}/explicit_select)
-
-- ## Security
-    - [Authentication](/{{route}}/{{version}}/security)
-    - [Scoping results](/{{route}}/{{version}}/scoping)
-    - [Limiting fields](/{{route}}/{{version}}/queries)
-
-- ## Configuration
-    - [Config options](/{{route}}/{{version}}/queries)
 
 - ## Various
     - [Metadata](/{{route}}/{{version}}/metadata)
     - [Controller usage](/{{route}}/{{version}}/controller_usage)
-    - [Error messages](/{{route}}/{{version}}/queries)
-    - [Base64 support](/{{route}}/{{version}}/queries)
-    - [Other frameworks](/{{route}}/{{version}}/queries)
+    - [Explicit select](/{{route}}/{{version}}/explicit_select)
     - [Known Issues](/{{route}}/{{version}}/known_issues)
-    - [Contributing](/{{route}}/{{version}}/contributing)
-    - [Thanks](/{{route}}/{{version}}/queries)
+    - [Contact](/{{route}}/{{version}}/contact)

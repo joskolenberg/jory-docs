@@ -13,7 +13,7 @@ php artisan jory:generate --all
 ```
 This command generates a JoryResource in the ```\App\Http\JoryResources``` namespace for each of your models.
 
-> {warning} Without further actions your Jory Resources are publicly available. Be sure to add the [auth middleware](/{{route}}/{{version}}/security#authentication) and/or [scope](/{{route}}/{{version}}/scoping) your data before putting your code into production!
+> {warning} Without further actions your Jory Resources are publicly available. Be sure to add the [auth middleware](/{{route}}/{{version}}/security#authentication) and/or [scope](/{{route}}/{{version}}/security#scoping) your data before putting your code into production!
 
 <a name="fetching"></a>
 ## Fetching data

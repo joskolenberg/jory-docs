@@ -10,7 +10,7 @@
 
 <a name="what-is"></a>
 ## What is a Jory Resource?
-A Jory Resource is much like Laravel's built-in Resource classes but can be called dynamically using [Jory Queries](/{{route}}/{{version}}/query_introduction).
+A Jory Resource is much like Laravel's built-in Resource classes but can be called dynamically using [Jory Queries](/{{route}}/{{version}}/fetching_introduction).
 Inside a Jory Resource is defined what can be fetched (and how) for a specific Eloquent Model, this includes:
 - [Fields](/{{route}}/{{version}}/fields) (which database and custom attributes can be fetched)
 - [Filters](/{{route}}/{{version}}/filters) (by which columns and custom filters an be filtered)
@@ -20,7 +20,7 @@ Inside a Jory Resource is defined what can be fetched (and how) for a specific E
 
 Jory Resources must extend the ```JosKolenberg\LaravelJory\JoryResource``` class and can best be created using the [generator](/{{route}}/{{version}}/generator) command.
 
-> {warning} Without further actions your Jory Resources are publicly available. Be sure to add the [auth middleware](/{{route}}/{{version}}/security#authentication) and/or [scope](/{{route}}/{{version}}/scoping) your data before putting your code into production!
+> {warning} Without further actions your Jory Resources are publicly available. Be sure to add the [auth middleware](/{{route}}/{{version}}/security#authentication) and/or [scope](/{{route}}/{{version}}/security#scoping) your data before putting your code into production!
 
 <a name="registering"></a>
 ## Registering

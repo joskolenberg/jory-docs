@@ -2,27 +2,35 @@
 
 ---
 
-- [Single Records](#first)
-- [By id](#find)
 - [Collections](#get)
+- [By id](#find)
+- [Single Records](#first)
 - [Aggregates](#aggregates)
 - [Multiple Resources](#multiple)
 
-<a name="first"></a>
-## Single Records
-To fetch a single record use the ```first``` endpoint.  
+
+<a name="get"></a>
+## Collections
+Use the ```get``` endpoint to fetch multiple records matching the criteria in your Jory Query.  
 <br>
-Fetch the first musician.
+Fetch all musicians.
 ```javascript
-axios.get('jory/musician/first');
+axios.get('jory/musician');
 ```
 <br>
-Fetch the first musician ordered by ```last_name```.
+Get the ```id``` and ```last_name``` of the first 10 musicians with ```first_name``` like ```John``` ordered by ```last_name```.
 ```javascript
-axios.get('jory/musician/first', {
+axios.get('jory/musician', {
     params: {
         jory: {
-            sorts: ['last_name']
+            fields: ['id', 'last_name'],
+            filter: {
+                field: 'first_name',
+                operator: 'like',
+                data: '%John%'
+            },
+            sorts: ['last_name'],
+            limit: 10,
         }
     }
 });
@@ -48,33 +56,25 @@ axios.get('jory/musician/4', {
 });
 ```
 
-<a name="get"></a>
-## Collections
-Use the ```get``` endpoint to fetch multiple records matching the criteria in your Jory Query.  
+<a name="first"></a>
+## Single Records
+To fetch a single record use the ```first``` endpoint.  
 <br>
-Fetch all musicians.
+Fetch the first musician.
 ```javascript
-axios.get('jory/musician');
+axios.get('jory/musician/first');
 ```
 <br>
-Get the ```id``` and ```last_name``` of the first 10 musicians with ```first_name``` like ```John``` ordered by ```last_name```.
+Fetch the first musician ordered by ```last_name```.
 ```javascript
-axios.get('jory/musician/4', {
+axios.get('jory/musician/first', {
     params: {
         jory: {
-            fields: ['id', 'last_name'],
-            filter: {
-                field: 'first_name',
-                operator: 'like',
-                data: '%John%'
-            },
-            sorts: ['last_name'],
-            limit: 10,
+            sorts: ['last_name']
         }
     }
 });
 ```
-
 <a name="aggregates"></a>
 ## Aggregates
 Simple ```count``` and ```exists``` endpoints are available to do a record count or check if any record matches your criteria.  

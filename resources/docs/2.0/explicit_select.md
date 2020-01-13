@@ -28,5 +28,5 @@ Example:
     }
 ```
 
-> {info} The ```explicitSelect``` option is smart enough to detect any primary or foreign keys which need to be added to the query for any requested relations to be loaded.
+> {info} The ```explicitSelect``` option will detect any primary or foreign keys which need to be added to the query for any requested relations to be loaded.
 
