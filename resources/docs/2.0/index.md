@@ -11,6 +11,7 @@
     - [Configuring sorts](/{{route}}/{{version}}/sorts)
     - [Configuring relations](/{{route}}/{{version}}/relations)
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
+    - [Security](/{{route}}/{{version}}/security)
 
 - ## Fetching Data
     - [Introduction](/{{route}}/{{version}}/fetching_introduction)
@@ -22,12 +23,10 @@
     - [Using offset & limit](/{{route}}/{{version}}/query_offset_and_limit)
 
 - ## Optimization
-    - [Eager loading](/{{route}}/{{version}}/queries)
-    - [Explicit select](/{{route}}/{{version}}/queries)
-    - [Deep Relations](/{{route}}/{{version}}/deep_relations)
+    - [Explicit select](/{{route}}/{{version}}/explicit_select)
 
 - ## Security
-    - [Authentication](/{{route}}/{{version}}/authentication)
+    - [Authentication](/{{route}}/{{version}}/security)
     - [Scoping results](/{{route}}/{{version}}/scoping)
     - [Limiting fields](/{{route}}/{{version}}/queries)
 

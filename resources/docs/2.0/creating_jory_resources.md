@@ -20,7 +20,7 @@ Inside a Jory Resource is defined what can be fetched (and how) for a specific E
 
 Jory Resources must extend the ```JosKolenberg\LaravelJory\JoryResource``` class and can best be created using the [generator](/{{route}}/{{version}}/generator) command.
 
-> {warning} Without further actions a Jory Resource exposes all the data from the linked model to the world. Be sure to add the [auth middleware](/{{route}}/{{version}}/authentication) and/or [scope](/{{route}}/{{version}}/scoping) your data before putting your code into production!
+> {warning} Without further actions your Jory Resources are publicly available. Be sure to add the [auth middleware](/{{route}}/{{version}}/security#authentication) and/or [scope](/{{route}}/{{version}}/scoping) your data before putting your code into production!
 
 <a name="registering"></a>
 ## Registering
