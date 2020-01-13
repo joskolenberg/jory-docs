@@ -2,16 +2,11 @@
 
 ---
 
-- [Introduction](#introduction)
 - [Single Records](#first)
 - [By id](#find)
 - [Collections](#get)
 - [Aggregates](#aggregates)
 - [Multiple Resources](#multiple)
-
-<a name="introduction"></a>
-## Introduction
-Once you've got your Jory Resources set up the data can be fetched by sending a Jory Query to the Jory Endpoints.
 
 <a name="first"></a>
 ## Single Records

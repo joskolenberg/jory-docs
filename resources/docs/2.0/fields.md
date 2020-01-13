@@ -6,6 +6,7 @@
 - [Custom Attributes](#custom-attributes)
 - [Eager Loading](#eager)
 - [Filtering and Sorting](#filtering-sorting)
+- [Default Fields](#default)
 
 <a name="registering"></a>
 ## Registering Fields
@@ -95,7 +96,7 @@ protected function configure(): void
 }
 ```
 
-<a name="hiding"></a>
+<a name="default"></a>
 ## Default Fields
 When no fields are explicitly requested by the API consumer the parser will return all configured fields. To prevent a field from being returned by default use the ```hideByDefault``` option. 
 ```php

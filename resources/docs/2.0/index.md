@@ -13,6 +13,7 @@
     - [Offset & limit options](/{{route}}/{{version}}/offset_and_limit)
 
 - ## Fetching Data
+    - [Introduction](/{{route}}/{{version}}/fetching_introduction)
     - [Endpoints](/{{route}}/{{version}}/endpoints)
     - [Selecting fields](/{{route}}/{{version}}/query_fields)
     - [Using filters](/{{route}}/{{version}}/query_filters)
