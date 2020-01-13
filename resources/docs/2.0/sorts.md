@@ -49,7 +49,7 @@ protected function configure(): void
 <a name="default-sorts"></a>
 ## Default Sorts
 Use the ```default``` option to apply a sort on every query. When using multiple default sorts, use the ```index``` parameter to define in which order the sorts must be applied.
-Any sort options in the request will allways take precedence over the default ones.
+Any sort options in the request will always take precedence over the default ones.
 ```php
 protected function configure(): void
 {
