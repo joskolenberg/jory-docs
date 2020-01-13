@@ -27,7 +27,10 @@ protected function configure(): void
 }
 ```
 
-> {warning} Check the [issues](/{{route}}/{{version}}/known_issues#relation-limits) when setting limits on relations.
+> {warning} Check the [issues](/{{route}}/{{version}}/known_issues#relation-limits) when setting limits on relations.  
+
+&nbsp;
+> {info} You can set a global default for your limits in the jory config file.
 
 <a name="offset"></a>
 ## Offset

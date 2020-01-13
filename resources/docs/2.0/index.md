@@ -19,7 +19,7 @@
     - [Using filters](/{{route}}/{{version}}/query_filters)
     - [Using sorts](/{{route}}/{{version}}/query_sorts)
     - [Using relations](/{{route}}/{{version}}/query_relations)
-    - [Using offset & limit](/{{route}}/{{version}}/query_offset)
+    - [Using offset & limit](/{{route}}/{{version}}/query_offset_and_limit)
 
 - ## Optimization
     - [Eager loading](/{{route}}/{{version}}/queries)
