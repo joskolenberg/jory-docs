@@ -1,5 +1,0 @@
-# Configuring filters
-
----
-
-applyRelationFilter

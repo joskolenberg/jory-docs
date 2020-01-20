@@ -4,6 +4,7 @@
 
 - [Registering Filters](#registering)
 - [Custom Filters](#custom-filters)
+- [Filtering on Relations](#relations)
 - [Available Operators](#operators)
 - [Registering on a Field](#field)
 
@@ -24,35 +25,47 @@ The filter will be performed by applying a ```where``` on a column with the same
 
 <a name="custom-filters"></a>
 ## Custom Filters
-When you want to add a custom filter to your Jory API you can add it as a second parameter. This class must implement the ```JosKolenberg\LaravelJory\Scopes\FilterScope``` interface.  
-NumberOfAlbumsInYearFilter.php
+When you want to add a custom filter to your Jory API you can add it as a second parameter. This class must implement the ```JosKolenberg\LaravelJory\Scopes\FilterScope``` interface.    
+FullNameFilter.php
 ```php
 use JosKolenberg\LaravelJory\Scopes\FilterScope;
 
-class NumberOfAlbumsInYearFilter implements FilterScope
+class FullNameFilter implements FilterScope
 {
     public function apply($builder, string $operator = null, $data = null): void
     {
-        // The $data parameter can be an array
-        $year = $data['year'];
-        $value = $data['value'];
-
-        $builder->whereHas('albums', function ($builder) use ($year) {
-            $builder->where('release_date', '>=', $year.'-01-01');
-            $builder->where('release_date', '<=', $year.'-12-31');
-        }, $operator, $value);
+        $builder->where('first_name', $operator, $data);
+        $builder->orWhere('last_name', $operator, $data);
     }
 }
 ```
-BandJoryResource.php
+MusicianJoryResource.php
 ```php
 protected function configure(): void
 {
     ...
-    $this->filter('number_of_albums_in_year', new NumberOfAlbumsInYearFilter);
+    // Search for musicians with a first or last name matching the search criteria
+    $this->filter('full_name', new FullNameFilter);
     ...
 }
 ```
+> {info} All filters are scoped, so any ```orWhere``` in a custom filter won't affect the rest of the query.
+
+<a name="relations"></a>
+## Filtering on Relations
+Filtering on a relation's field doesn't require a custom ```FilterScope``` class, all registered filters in dot notation will automatically be translated into a filter on the relation using Laravel's ```whereHas```.  
+MusicianJoryResource.php
+```php
+protected function configure(): void
+{
+    ...
+    // Search for musicians playing in a band which has an album with a name matching the search criteria
+    $this->filter('band.albums.name');
+    ...
+}
+```
+> {info} All filters are scoped, so any ```orWhere``` in a custom filter won't affect the rest of the query.
+
 <a name="operators"></a>
 ## Available Operators
 The following operators are available for any filter: ```=```, ```!=```, ```<>```, ```>```, ```>=```, ```<```, ```<=```, ```<=>```, ```like```, ```not_like```, ```is_null```, ```not_null```, ```in``` and ```not_in```.  
