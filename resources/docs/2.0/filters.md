@@ -64,7 +64,6 @@ protected function configure(): void
     ...
 }
 ```
-> {info} All filters are scoped, so any ```orWhere``` in a custom filter won't affect the rest of the query.
 
 <a name="operators"></a>
 ## Available Operators
