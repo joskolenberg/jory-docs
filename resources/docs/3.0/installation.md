@@ -12,7 +12,7 @@ Pull the package in using composer.
 ```shell script
 composer require joskolenberg/laravel-jory
 ```
-> {warning} Laravel Jory 2.0 requires Laravel 5.8 or higher.
+> {warning} Laravel Jory 3.x requires Laravel 7.x or higher. Use the 2.x version for Laravel 5.8 to 6.x.
 
 <a name="config"></a>
 ## Publish Config
