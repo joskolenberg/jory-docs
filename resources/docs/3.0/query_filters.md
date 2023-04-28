@@ -8,7 +8,9 @@
 
 <a name="applying"></a>
 ## Applying Filters
-Use the ```filter``` or minified ```flt``` key to add a filter to your Jory Query.  
+Use the ```filter``` or minified ```flt``` key to add a filter to your Jory Query.
+
+The following operators are available for any filter: ```=```, ```!=```, ```<>```, ```>```, ```>=```, ```<```, ```<=```, ```<=>```, ```like```, ```not_like```, ```is_null```, ```not_null```, ```in``` and ```not_in```.
 
 <a name="single-filters"></a>
 ## Single Filters

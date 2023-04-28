@@ -1,6 +1,5 @@
 - ## Get Started
     - [Overview](/{{route}}/{{version}}/overview)
-    - [Upgrade 2.x to 3.x](/{{route}}/{{version}}/upgrade)
     - [Installation](/{{route}}/{{version}}/installation)
     - [Quickstart](/{{route}}/{{version}}/quickstart)
     
