@@ -25,7 +25,26 @@ The filter will be performed by applying a ```where``` on a column with the same
 
 <a name="custom-filters"></a>
 ## Custom Filters
-When you want to add a custom filter to your Jory API you can add it as a second parameter. This class must implement the ```JosKolenberg\LaravelJory\Scopes\FilterScope``` interface.    
+When you want to add a custom filter to your Jory API you can pass a callback or FilterScope class as a second parameter. A Filterscope class must implement the ```JosKolenberg\LaravelJory\Scopes\FilterScope``` interface.
+
+MusicianJoryResource.php
+```php
+protected function configure(): void
+{
+    ...
+    // Search for musicians with a first or last name matching the search criteria
+    $this->filter('full_name', function ($builder, string $operator = null, $data = null){
+        $builder->where('first_name', $operator, $data)
+            ->orWhere('last_name', $operator, $data);
+    });
+
+    ...
+}
+```
+> {info} Filter callbacks are available since version 3.2.0
+
+Or equal functionality using a FilterScope class:
+
 FullNameFilter.php
 ```php
 use JosKolenberg\LaravelJory\Scopes\FilterScope;
@@ -34,8 +53,8 @@ class FullNameFilter implements FilterScope
 {
     public function apply($builder, string $operator = null, $data = null): void
     {
-        $builder->where('first_name', $operator, $data);
-        $builder->orWhere('last_name', $operator, $data);
+        $builder->where('first_name', $operator, $data)
+            ->orWhere('last_name', $operator, $data);
     }
 }
 ```

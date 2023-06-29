@@ -24,7 +24,24 @@ The sort will be performed by applying an ```orderBy``` on a column with the sam
 
 <a name="custom-sorts"></a>
 ## Custom Sorts
-When you want to add a custom sort option to your Jory API you can add it as a second parameter. This class must implement the ```JosKolenberg\LaravelJory\Scopes\SortScope``` interface.  
+When you want to add a custom sort option to your Jory API you can pass a callback or SortScope class as a second parameter. A SortScope class must implement the ```JosKolenberg\LaravelJory\Scopes\SortScope``` interface.
+
+
+MusicianJoryResource.php
+```php
+protected function configure(): void
+{
+    ...
+    $this->sort('band_name', function ($builder, string $order = 'asc'){
+        $builder->join('bands', 'band_id', 'bands.id')->orderBy('bands.name', $order);
+    });
+    ...
+}
+```
+> {info} Sort callbacks are available since version 3.2.0
+
+Or equal functionality using a SortScope class:
+
 BandNameSort.php
 ```php
 use JosKolenberg\LaravelJory\Scopes\SortScope;
